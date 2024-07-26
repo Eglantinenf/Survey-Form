@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Survey Form | Nastaran</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="title-header">
+                <h1 id="title">freeCodeCamp Survey Form | NF</h1>
+                <p id="description">Thank you for taking the time to help us improve the platform</p>
+            </div>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">
+                    Age
+                    <span class="span">(optional)</span>
+                </label>
+                <input id="number" min=12 max=99 type="number" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" required >
+                    <option selected>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="notSaying">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend our courses to your friends?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio">
+                    Definitely
+                </label>
+                <label>
+                    <input value="maybe" type="radio" name="user-recommend">
+                    Maybe
+                </label>
+                <label>
+                    <input type="radio" value="not-sure" name="user-recommend">
+                    Not sure
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite feature of our
+                    website</p>
+                <select name="favorite" id="fav">
+                    <option selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="courses">Courses</option>
+                    <option value="community">Community</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>
+                    What is your skills?
+                    <span class="span">(Check all that you have)</span>
+                </p>
+                <label>
+                    <input name="prefer" type="checkbox" value="javascript" class="input-checkbox">
+                    Javascript
+                </label>
+                <label>
+                    <input name="prefer" type="checkbox" value="html" class="input-checkbox">
+                    HTML
+                </label>
+                <label>
+                    <input name="prefer" value="css" type="checkbox" class="input-checkbox">
+                    CSS
+                </label>
+                <label>
+                    <input name="prefer" value="reactjs" type="checkbox" class="input-checkbox">
+                    React.Js
+                </label>
+                <label>
+                    <input name="prefer" type="checkbox" value="nodejs" class="input-checkbox">
+                    Node.Js
+                </label>
+                <label>
+                    <input name="prefer" type="checkbox" value="npm" class="input-checkbox">
+                    NPM
+                </label>
+                <label>
+                    <input name="prefer" type="checkbox" value="mongo" class="input-checkbox">
+                    MongoDB
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="python" id="python" class="input-checkbox">
+                    Python
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="django" id="django" class="input-checkbox">
+                    Django
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" value="typescript" id="typescript" class="input-checkbox">
+                    TypeScript
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any suggestions for us?</p>
+                <textarea name="suggestion" id="suggestions" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
